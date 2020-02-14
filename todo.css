@@ -1,0 +1,148 @@
+html {
+    font-size:16pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    display:grid; 
+    background-color:pink;
+}
+li {
+    background-color:white;
+    padding:18px;
+    margin-bottom:14px;
+}
+h1 {
+    text-align:center;
+    padding-top:50px;
+    margin-left:28px;
+    font-size: 3.3rem;
+    color:white; 
+    text-shadow:2px 2px 0px navy; 
+}
+h2 {
+    font-size:1rem;
+    color:black;
+}
+ul {
+    list-style-type:none;
+}
+/* ITEMs LIST */
+
+#todo {  
+    margin:0 auto;  
+    width:40%;
+    border-top:2px solid navy; 
+    border-bottom:2px solid navy; 
+    padding-top:40px;
+    padding-bottom:20px;
+
+}
+
+#todolist {
+    margin:auto;
+
+}
+
+#todo li {
+    display:grid;
+}
+
+input[type=checkbox] {
+    grid-column-start:1;
+    grid-column-end: 2;
+    border:2px solid navy;
+}
+
+label {
+    grid-column-start:2;
+    grid-column-end: 9;
+}
+.removeitem {
+    grid-column-start:9;
+    grid-column-end: 10;
+    background-color:white;
+    color:grey; 
+    border:none; 
+}
+
+#orderitems {
+    margin:20px;
+    float:right;
+    background-color:navy;
+    color:pink;
+}
+
+/* CREATE NEW ITEMS FORM  */
+#newitem {
+    margin:auto; 
+}
+button {
+    padding:4px 6px;
+    background-color:pink;
+    color:navy; 
+    border:2px solid navy;
+    border-radius: 28px;
+    font-size:0.8rem;
+}
+#itemform {
+    margin:auto; 
+    width:50%;
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:20px;
+}
+#inputitem {
+    padding:8px 10px;
+    border-radius: 2px;
+    border: 2px, solid;
+    font-size:0.8rem;
+    opacity:0.7;
+}
+
+/* OLD ITEMs LIST */
+#previousitems { 
+    padding-top:20px;
+   padding-bottom:50px;
+    margin:0 auto; 
+    width:40%;
+    text-align:center; 
+} 
+
+hr {
+    border:1px solid navy; 
+    opacity:0.9;
+
+}
+#previousitemslist button:hover{
+    background-color:blue;
+    border-radius: 28px;
+    padding:4px 6px;;
+    transition: 0.3s;
+}
+#previousitemslist{
+   list-style: none;
+
+}
+#previousitems li{
+    display:grid;
+    background-color:white;
+    opacity:0.5;
+    font-size:0.8rem;
+    padding:10px;
+    padding-top:10px;
+}
+.resetitem {
+    border:none;
+    color:white;
+    background-color:pink;
+    grid-column-start:9;
+    grid-column-end: 10;
+}
+
+footer {
+    margin:auto;
+    font-size:10pt;
+    grid-row-start:11;
+    grid-row-end:13;
+    text-align:center; 
+}

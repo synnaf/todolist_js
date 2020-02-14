@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <title>TO DO'S</title>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="todo.css" >
+    <!-- Javascript -->
+    <script type="text/javascript" src="todo.js"></script>
+  </head>
+  <body>
+    <main>
+    <h1>THINGS TO DO:</h1>
+      <div id="todo">
+        <ul id="todolist">
+        <!--Get items from script-->
+        </ul>
+        <!-- sort button -->
+        <button type="button" id="orderitems">Order A-Z</button>
+      </div> 
+      <!-- Adds new item through script -->
+      <div id="itemform">
+        <h2>Add something:</h2>  
+        <form action="#" method="GET" id="newitem">
+            <input type="text" name="newToDoItem" id="inputitem" placeholder="Let's do something" />
+            <button type="button" id="additem">Add</button>
+        </form>
+      </div>
+      <div id="previousitems">
+        <h2>What's finished?</h2>
+        <ul id="previousitemslist"> 
+          <!--Adds finished items from script-->
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p>Fanny Värnbrink Forsman, 2019 :-)</p>
+    </footer>
+  </body>
+</html>
